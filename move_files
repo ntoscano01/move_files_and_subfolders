@@ -1,0 +1,11 @@
+#Use this snippet to move files or subfolders from one directory to another
+
+import os
+import shutil
+import glob
+
+inputs=glob.glob('your/file/path')
+outputs='your/file/path'
+
+for f in inputs:
+    shutil.move(f, outputs)
